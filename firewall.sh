@@ -10,6 +10,8 @@ sudo ufw enable
 # The Basics
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
+
+# Let's connect the daily usages
 sudo ufw allow out 80/tcp
 sudo ufw allow out 443/tcp
 sudo ufw allow out 7685/tcp
@@ -22,7 +24,6 @@ sudo ufw allow out 30000/udp
 sudo ufw allow in 30000/udp
 
 # Chromecast (for VLC streaming to TV)
-
 sudo ufw allow out 8008/tcp
 sudo ufw allow out 8009/tcp
 sudo ufw allow out 8010/tcp
@@ -46,7 +47,6 @@ sudo ufw allow in 8010/tcp
 #sudo ufw allow in 32976/tcp
 
 # UFW ports WoW Cata Twinstar
-
 #sudo ufw allow out 1119,3724,6012/tcp
 #sudo ufw allow out 1119,3724,6012/udp
 #sudo ufw allow in 1119,3724,6012/tcp
